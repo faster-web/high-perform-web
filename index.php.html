@@ -5,7 +5,7 @@
 </head>
 <body>
 	<h1>Rangkaian Test Syntax PHP</h1>
-	<p align="justify">Berikut ini adalah rangkaian test syntax PHP yang saya lakukan pada hari Minggu, 30 Agustus 2015 pada pukul 20.00:</p>
+	<p align="justify">Berikut ini adalah rangkaian test syntax PHP yang saya lakukan pada hari Minggu, 30 Agustus 2015 pada pukul 20.00 dan Senin, 31 Agustus 2015 pada pukul 20.58:</p>
 
 	<!--test 01 echo / print command-->
 	<?php
@@ -44,9 +44,9 @@
 
 		$loggedIn = 1234;
 		if ($loggedIn == '5678'){
-			echo "Selamat, anda telah berhasil masuk situs ini!";
+			echo "Pin anda benar. Selamat, anda telah berhasil masuk situs ini!";
 		} else {
-			echo "Silahkan masukan id anda terlebih dahulu!";
+			echo "Pin tidak dikenali. Silahkan masukan pin anda terlebih dahulu!";
 		}
 	?>
 	
@@ -56,9 +56,9 @@
 
 		$loggedIn = false;
 		if ($loggedIn == 'true'){
-			echo "Selamat datang!";
+			echo "Selamat datang, member!";
 		} else {
-			echo "Anda tidak memiliki hak akses. GTFO!";
+			echo "Anda tidak memiliki hak akses. Silakan ulangi proses.";
 		}
 
 	?>
@@ -136,7 +136,10 @@
 </body>
 </html>
 
-<!--PROCESS>PHP-->
+
+<!--
+	Process.php dan kaitannya dengan $_POST
+	-->
 <html>
 <head>
 	<title>Process</title>
