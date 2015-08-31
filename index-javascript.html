@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Testing Javascript</title>
+		<script type="text/javascript">
+
+			// 08a function
+			function beriKabar(nama){
+				document.write("Halo, " + nama);
+			}
+
+		</script>
+	</head>
+	<body>
+		<h1>Testing Javascript</h1>
+		<p align="justify">Pemanasan javascript sebagai media memorisasi:</p>
+
+		<script type="text/javascript">
+
+			// 01 simple document.write
+			document.write("Apa Kabar?");
+
+			// 02 variable declaration
+			var variabelku;
+			variabelku = 5;
+
+		</script>
+	
+	<hr>
+
+		<script type="text/javascript">
+
+			// 03 concatenation strings
+			var quote1 = "Society is dead! ";
+			var quote2 = "Long live society";
+			var quotation = quote1 + quote2;
+			document.write(quotation);
+
+		</script>
+
+	<hr>
+
+		<script type="text/javascript">
+
+			//04 concatenation numbers
+			var angka1 = 1999;
+			var angka2 = 2015;
+			var angkaku = 1999 * 2015;
+			document.write(angkaku);
+
+		</script>
+
+	<hr>
+
+		<script type="text/javascript">
+
+			// 05 length
+			var nama = "Gema Bujangga";
+			var jumlahhuruf = nama.length;
+			document.write(jumlahhuruf);
+
+		</script>
+
+	<hr>
+
+		<script type="text/javascript">
+
+			// 06 substring (antara)
+			var nama = "JS Badudu";
+			var namakeluarga = nama.substring(2,9);
+			document.write(namakeluarga);
+
+		</script>
+
+	<hr>
+
+		<script type="text/javascript">
+
+			// 07 array
+			var animal = new Array("cat", "dog", "hen");
+			document.write(animal);
+
+		</script>
+
+	<hr>
+
+		<script type="text/javascript">
+
+			// 08b function, deklarasi function ditaruh di head
+			//kemudian dipanggil scriptnya di bagian bawah </body>
+			beriKabar("Gem");
+			document.write("<br>");
+			beriKabar("Bul");
+
+		</script>
+
+		<script type="text/javascript">
+
+			// 09a alert, jika memenuhi saja maka keluar alert)
+			var bilanganA = 94;
+			if (bilanganA > 10){
+				alert(bilanganA);
+			}
+
+			var bilanganB = 84;
+			if (bilanganB >= 84){
+				alert(bilanganB);
+			}
+
+			// 09b double equal -> sama persis/ case sensitive
+			// di bawah ini tidak memenuhi dan alert tidak muncul
+			var nama = "gema";
+			if (nama == "Gema"){
+				alert(nama);
+			}
+
+			// 09c ditambahkan else
+			var nama = "gema";
+			if (nama == "Gema"){
+				alert(nama);
+			} else {
+				alert("Unfullfiled condition. Sorry!")
+			}
+
+		</script>
+
+	<hr>
+
+		<script type="text/javascript">
+
+			//loop
+			for (i=0; i<5; i++){
+				document.write("Ini merupakan iterasi ke " + i + "<br>");
+			}
+
+		</script>
+		
+	</body>
+</html>

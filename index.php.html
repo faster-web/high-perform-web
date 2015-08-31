@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome Screen</title>
+</head>
+<body>
+	<h1>Rangkaian Test Syntax PHP</h1>
+	<p align="justify">Berikut ini adalah rangkaian test syntax PHP yang saya lakukan pada hari Minggu, 30 Agustus 2015 pada pukul 20.00:</p>
+
+	<!--test 01 echo / print command-->
+	<?php
+
+		$variabelsaya = "Ini adalah variabel saya!";
+		echo $variabelsaya;
+
+	?>
+
+	<hr>
+	
+	<!--test 01 arithmetic operation-->
+	<?php
+
+		$angka1 = 1984;
+		$angka2 = 2015;
+		$sum = $angka1 + $angka2;
+		echo $sum;
+
+	?>
+
+	<hr>
+
+	<!--test 03 concatenation number and strings-->
+	<?php
+
+		$name = "Gem";
+		echo "Selamat Pagi, " . $name;
+
+	?>
+
+	<hr>
+
+	<!--test 04 if statements-->
+	<?php
+
+		$loggedIn = 1234;
+		if ($loggedIn == '5678'){
+			echo "Selamat, anda telah berhasil masuk situs ini!";
+		} else {
+			echo "Silahkan masukan id anda terlebih dahulu!";
+		}
+	?>
+	
+	<hr>
+
+	<?php
+
+		$loggedIn = false;
+		if ($loggedIn == 'true'){
+			echo "Selamat datang!";
+		} else {
+			echo "Anda tidak memiliki hak akses. GTFO!";
+		}
+
+	?>
+	<hr>
+
+	<!--test 05a html forms-->
+	<form>
+		<input type="text">
+		<input type="submit">
+	</form>
+
+	<hr>
+	
+	<!--test 05b html forms-->
+	<form action="process.php" method="post">
+		Masukan nama: <input name="kredential" type="text">
+		<input type="submit">
+	</form>
+
+	<hr>
+
+	<!--test 06a array and for loop in array-->
+	<?php
+
+		$list = array("Alice", "Beth", "Cornelia");
+		echo $list[2];
+
+	?>
+
+	<hr>
+
+	<!--test 06b for loop in array-->
+	<?php
+
+		$longlist = array("Ann", "Bob", "Cammy");
+		foreach ($longlist as $person){
+			echo $person . " ";
+		}
+
+	?>
+
+	<hr>
+
+	<!--test 06c another for loop in array for addition-->
+	<?php
+
+		$bilanganbanyak = array (5, 3, 7);
+		$kumulatif = 0;
+
+		foreach ($bilanganbanyak as $bilangantunggal){
+			$kumulatif = $kumulatif + $bilangantunggal;
+		}
+
+		echo $kumulatif;
+
+	?>
+
+	<hr>
+
+	<?php
+
+		$bilanganbanyak = array (6, 55, 35);
+		$modifier = 1999;
+
+		foreach ($bilanganbanyak as $bilangantunggal){
+			$modifier = $modifier + $bilangantunggal;
+		}
+
+		echo $modifier;
+
+	?>
+
+
+
+</body>
+</html>
+
+<!--PROCESS>PHP-->
+<html>
+<head>
+	<title>Process</title>
+</head>
+<body>
+
+<?php
+	
+	$name = $_POST["kredential"];
+	echo "Terima kasih sudah mendaftar, " . $name;
+
+?>
+
+</body>
+</html>
